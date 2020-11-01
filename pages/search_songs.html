@@ -18,5 +18,31 @@
     </div>
 
     <h1>Kommt bald...</h1>
+
+
+    <div id="container">
+      <label for="query">Search:</label>
+      <input id="query" placeholder="" disabled>
+
+      <div id="matchesInfo" class="hidden"></div>
+      <div id="itemNavigation" class="hidden"></div>
+
+      <div id="backToResults" class="hidden">❮ Back to search results</div>
+
+      <div id="pageNavigation">
+        <div id="previousPage" class="hidden">❮ Previous page</div>
+        <div id="nextPage" class="hidden">Next page ❯</div>
+      </div>
+
+      <!-- begin results container, content generated dynamically -->
+      <div id="matches"></div>
+      <!-- end results container, content generated dynamically -->
+
+      <div id="songInfo" class="hidden"></div>
+    </div>
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../scripts/main.js"></script>
+
   </body>
 </html>
