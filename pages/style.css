@@ -14,25 +14,40 @@ body {
 }
 
 h1 {
-  font: BlinkMacSystemFont
-  color: black;
+  color: #333333;
   text-align: left;
+  margin-left: 100px;
 }
 
 h3 {
-  color: black;
+  color: #333333;
   text-align: left;
+  margin-left: 100px;
+}
+
+p {
+  color: #353535;
+  text-align: left;
+  margin-left: 100px;
 }
 
 .song a {
   float: left;
-  color: black;
+  color: #1175d9;
   text-align: center;
   padding: 3px 6px;
   text-decoration: none;
-  font-size: 20px;
-  background-color: #f2f2f2;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #f8f8f8;
+  margin-left: 100px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px -8px rgba(0,0,0,.2);
 }
+
+.song a:hover {
+    background-color: #cccccc;
+  }
 
 /* ~~ Top Navigation Bar ~~ */
 
@@ -51,7 +66,7 @@ h3 {
 .navigation-bar img {
   float:left;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 100px;
 }
 .navigation-bar ul {
   padding: 0px;
