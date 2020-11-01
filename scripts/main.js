@@ -1,36 +1,91 @@
-
 console.log("Starting lunr script...");
+
+var lunrIndex,
+  $results,
+  documents;
 
 const INDEX_FILE = 'https://raw.githubusercontent.com/lgulich/cantusmagister24/master/data/songs.json?token=AFLQOBBDWGMSGQBDFJR3APC7VBMLQ';
 
-// Get index data and load index
+function initLunr() {
+  $.getJSON(INDEX_FILE)
+    .done(function(index) {
+      documents = index;
 
-// fetch(INDEX_FILE).then(response => {
-//   return response.json();
-// });
+      lunrIndex = lunr(function(){
+        this.ref('no')
+        this.field('name')
+        this.field('category')
+        this.field('text')
+        this.field('image')
 
-var index;
+        documents.forEach(function(doc) {
+          try {
+            this.add(doc)
+          } catch (e) {
+            console.error("Error: could not add doc")
+          }
+        }, this)
+      })
+    })
+    .fail(function(jqxhr, textStatus, error) {
+      var err = textStatus + ", " + error;
+      console.error("Error getting Lunr index file:", err);
+    });
+}
 
-fetch(INDEX_FILE)
-  .then(response => { return response.json(); })
-  .then(json => {
-    // elasticlunr.clearStopWords();
-    index = lunr.Index.load(json);
-    // queryInput.disabled = false; 
-    // queryInput.focus();
+
+function search(query) {
+  return lunrIndex.search(query).map(function(result) {
+    return documents.filter(function(page) {
+      try {
+        console.log(page)
+        return page.no === result.ref;
+      } catch (e) {
+        console.log('whoops')
+      }
+    })[0];
+  });
+}
+
+function renderResults(results) {
+  if (!results.length) {
+    return;
+  }
+
+  results.slice(0, 10).forEach(function(result) {
+    var $result = $("<li>");
+
+    $result.append($("<a>", {
+      href: "../" + result.image,
+      text: "» " + result.name
+    }));
+
+    $results.append($result);
+  });
+}
+
+function initUI() {
+  $results = $("#results");
+
+  $("#search").keyup(function(){
+    $results.empty();
+    var query = $(this).val();
+    if (query.length < 2) {
+      return;
+    }
+
+    var results = search(query);
+
+    renderResults(results);
+  });
+}
+
+console.log("before init");
+initLunr();
+console.log("after init");
+
+$(document).ready(function(){
+  initUI();
 });
 
-// fetch(INDEX_FILE)
-//     .then(function (res) {return res.json();})
-//     .then(function (data) {
-//               const idx = lunr.Index.load(data);
-//     });
-
-// fetch(INDEX_FILE)
-//   .then(response => response.json())
-//   .then(data => lunr.Index.load(JSON.parse(data)));
-  // .then(data => console.log(data));
-
-
-
-// var idx = lunr.Index.load(JSON.parse(data))
+console.log("after document");
