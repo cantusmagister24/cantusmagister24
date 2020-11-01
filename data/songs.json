@@ -1,23 +1,23 @@
 [
   {
-    "no": "6",
+    "id": "6",
     "name": "Schweizerpsalm",
     "category": "Heimatlieder",
     "text": "Trittst im Morgenrot daher",
-    "image": "media/songs/006_schweizerpsalm.JPG"
+    "image": "media/songs/006_schweizerpsalm.jpg"
   },
   {
-    "no": "8",
+    "id": "8",
     "name": "Unser Leben gleicht der Reise",
     "category": "Heimatlieder",
     "text": "eines Wandrers in der Nacht",
-    "image": "media/songs/008_unser_leben_gleicht_der_reise.JPG"
+    "image": "media/songs/008_unser_leben_gleicht_der_reise.jpg"
   },
   {
-    "no": "20", 
+    "id": "20", 
     "name": "Gaudeamus Igitur",
     "category": "Studentenlieder",
     "text": "Juvenes dum sumus",
-    "image": "media/songs/020_gaudeamus_igitur.JPG"
+    "image": "media/songs/020_gaudeamus_igitur.jpg"
   }
 ]

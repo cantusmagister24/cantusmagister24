@@ -2,27 +2,27 @@ console.log("Starting lunr script...");
 
 var lunrIndex,
   $results,
-  documents;
+  songs;
 
 const INDEX_FILE = 'https://raw.githubusercontent.com/lgulich/cantusmagister24/master/data/songs.json?token=AFLQOBBDWGMSGQBDFJR3APC7VBMLQ';
 
 function initLunr() {
   $.getJSON(INDEX_FILE)
     .done(function(index) {
-      documents = index;
+      songs = index;
 
       lunrIndex = lunr(function(){
-        this.ref('no')
+        this.ref('id')
         this.field('name')
         this.field('category')
         this.field('text')
         this.field('image')
 
-        documents.forEach(function(doc) {
+        songs.forEach(function(song) {
           try {
-            this.add(doc)
+            this.add(song)
           } catch (e) {
-            console.error("Error: could not add doc")
+            console.error("Error: Could not add song to index.")
           }
         }, this)
       })
@@ -35,11 +35,11 @@ function initLunr() {
 
 
 function search(query) {
-  return lunrIndex.search(query).map(function(result) {
-    return documents.filter(function(page) {
+  return lunrIndex.search("*"+query+"*").map(function(result) {
+    return songs.filter(function(song) {
       try {
-        console.log(page)
-        return page.no === result.ref;
+        console.log(song)
+        return song.id === result.ref;
       } catch (e) {
         console.log('whoops')
       }
