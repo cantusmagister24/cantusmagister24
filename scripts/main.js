@@ -4,7 +4,7 @@ var lunrIndex,
   $results,
   songs;
 
-const INDEX_FILE = 'https://raw.githubusercontent.com/lgulich/cantusmagister24/master/data/songs.json?token=AFLQOBBDWGMSGQBDFJR3APC7VBMLQ';
+const INDEX_FILE = 'https://raw.githubusercontent.com/lgulich/cantusmagister24/master/data/songs.json?token=AFLQOBBIA5AHO4QHR2EW5IC7VCDKQ';
 
 function initLunr() {
   $.getJSON(INDEX_FILE)
