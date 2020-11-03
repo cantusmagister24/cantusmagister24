@@ -2,77 +2,77 @@
   {
     "id": "6",
     "name": "Schweizerpsalm",
-    "category": "Heimatlieder",
+    "category": "heimatlieder",
     "text": "",
     "image": "media/songs/006_schweizerpsalm.jpg"
   },
   {
     "id": "8",
     "name": "Unser Leben gleicht der Reise",
-    "category": "Heimatlieder",
+    "category": "heimatlieder",
     "text": "",
     "image": "media/songs/008_unser_leben_gleicht_der_reise.jpg"
   },
   {
     "id": "20",
     "name": "Gaudeamus Igitur",
-    "category": "Studentenlieder",
+    "category": "studentenlieder",
     "text": "",
     "image": "media/songs/020_gaudeamus_igitur.jpg"
   },
   {
     "id": "24",
     "name": "Burschen heraus",
-    "category": "Studentenlieder",
+    "category": "studentenlieder",
     "text": "",
     "image": "media/songs/024_burschen_heraus.jpg"
   },
   {
     "id": "44",
     "name": "Im Krug zum grünen Kranze",
-    "category": "Studentenlieder",
+    "category": "studentenlieder",
     "text": "",
     "image": "media/songs/044_im_krug_zum_gruenen_kranze.jpg"
   },
   {
     "id": "45",
     "name": "Im schwarzen Walfisch zu Askalon",
-    "category": "Studentenlieder",
+    "category": "studentenlieder",
     "text": "",
     "image": "media/songs/045_im_schwarzen_walfisch_zu_askalon.jpg"
   },
   {
     "id": "51",
     "name": "Nach Süden nuch sich lenken",
-    "category": "Studentenlieder",
+    "category": "studentenlieder",
     "text": "",
     "image": "media/songs/051_nach_sueden_nun_sich_lenken.jpg"
   },
   {
     "id": "56",
     "name": "So pünktlich zur Sekunde",
-    "category": "Studentenlieder",
+    "category": "studentenlieder",
     "text": "",
     "image": "media/songs/056_so_puenktlich_zur_sekunde.jpg"
   },
   {
     "id": "57",
     "name": "Studen sein wenn die Veilchen blühen",
-    "category": "Studentenlieder",
+    "category": "studentenlieder",
     "text": "",
     "image": "media/songs/057_student_sein_wenn_die_veilchen_bluehen.jpg"
   },
   {
     "id": "58",
     "name": "Trautes Schätchen trag nicht Leid",
-    "category": "Studentenlieder",
+    "category": "studentenlieder",
     "text": "",
     "image": "media/songs/058_trautes_schaetchen_trag_nicht_leid.jpg"
   },
   {
     "id": "67",
     "name": "Wütend wälzt sich einst im Bette",
-    "category": "Studentenlieder",
+    "category": "studentenlieder",
     "text": "",
     "image": "media/songs/067_wuetend_waelzt_sich_einst_im_bette.jpg"
   },
@@ -86,63 +86,63 @@
   {
     "id": "120",
     "name": "Freut euch des Lebens",
-    "category": "Volkslieder",
+    "category": "volkslieder",
     "text": "",
     "image": "media/songs/120_freut_euch_des_lebens.jpg"
   },
   {
     "id": "122",
     "name": "Kein schöner Land in dieser Zeit",
-    "category": "Volkslieder",
+    "category": "volkslieder",
     "text": "",
     "image": "media/songs/122_kein_schoener_land_in_dieser_zeit.jpg"
   },
   {
     "id": "202",
     "name": "Bella Ciao",
-    "category": "Arbeiterlieder",
+    "category": "arbeiterlieder",
     "text": "",
     "image": "media/songs/202_bella_ciao.jpg"
   },
   {
     "id": "233",
     "name": "Es lebt der Eisbär in Sibirien",
-    "category": "Kunterbunt",
+    "category": "kunterbunt",
     "text": "",
     "image": "media/songs/233_es_lebt_der_eisbaer_in_sibirien.jpg"
   },
   {
     "id": "236",
     "name": "Hulda",
-    "category": "Kunterbunt",
+    "category": "kunterbunt",
     "text": "",
     "image": "media/songs/236_hulda.jpg"
   },
   {
     "id": "286",
     "name": "Wenn eine tannige Hose hät",
-    "category": "Kanon",
+    "category": "kanon",
     "text": "",
     "image": "media/songs/286_wenn_eine_tannige_hose_haet.jpg"
   },
   {
     "id": "287",
     "name": "Frere Jacques",
-    "category": "Kanon",
+    "category": "kanon",
     "text": "",
     "image": "media/songs/287_frere_jacques.jpg"
   },
   {
     "id": "A2",
     "name": "Auf des Munots altem Turme",
-    "category": "Beiblatt",
+    "category": "beiblatt",
     "text": "",
     "image": "media/songs/A2_auf_des_munots_altem_turme.jpg"
   },
   {
     "id": "A4",
     "name": "Matrosenlied",
-    "category": "Beiblatt",
+    "category": "beiblatt",
     "text": "",
     "image": "media/songs/A4_matrosenlied.jpg"
   }

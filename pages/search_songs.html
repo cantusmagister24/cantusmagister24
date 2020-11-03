@@ -7,7 +7,9 @@
   <body>
     <div class="navigation-bar">
       <div id="navigation-container">
-        <img src="../media/logo/cantus_magister_24_logo.png" width="90" height="45"/>
+        <a href="main.html">
+          <img src="../media/logo/cantus_magister_24_logo.png" width="90" height="45"/>
+        </a>
         <ul>
           <li><a href="main.html">Home</a></li>
           <li><a href="random_songs.html">Zufällig</a></li>
@@ -17,8 +19,27 @@
       </div>
     </div>
 
-    <p><input id="search" type="text" placeholder="Suchen..."></p>
-    <ul id="results"></ul>
+    <div class="search-box">
+      <h1>Suchen Sie in <span class="orange-text">44</span> Liedern</h1>
+      <p>
+      Auf dem grössten Schweizer Liedermarktplatz für Studentenlieder und Chansons
+      </p>
+      <input id="search" type="text" placeholder="Suchen..." height="40">
+      <select name="category" id="category">
+        <option value="" disabled selected hidden>Kategorie wählen...</option>
+        <option value="">Alle</option>
+        <option value="heimatlieder">Heimatlieder</option>
+        <option value="studentenlieder">Studentenlieder</option>
+        <option value="soldatenlieder">Soldatenlieder</option>
+        <option value="volkslieder">Volkslieder</option>
+        <option value="arbeiterlieder">Arbeiterlieder</option>
+        <option value="kunterbunt">Kunterbunt</option>
+        <option value="kanon">Kanon</option>
+        <option value="beiblatt">Beiblatt</option>
+      </select>
+      </p>
+      <ul id="results"></ul>
+    </div>
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://unpkg.com/lunr/lunr.js"></script>

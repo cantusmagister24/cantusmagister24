@@ -4,7 +4,7 @@ var lunrIndex,
   $results,
   songs;
 
-const INDEX_FILE = 'https://raw.githubusercontent.com/lgulich/cantusmagister24/master/data/songs.json?token=AFLQOBBIA5AHO4QHR2EW5IC7VCDKQ';
+const INDEX_FILE = 'https://raw.githubusercontent.com/lgulich/cantusmagister24/master/data/songs.json?token=AFLQOBB2K3XLSB3VG7LIFTS7VHQJ2';
 
 function initLunr() {
   $.getJSON(INDEX_FILE)
@@ -34,8 +34,16 @@ function initLunr() {
 }
 
 
-function search(query) {
-  return lunrIndex.search("*"+query+"*").map(function(result) {
+function search(query, category) {
+  console.log("categ: "+category)
+  escapedQuery = query.replace(" ", "\ ")
+  var fullQuery;
+  if(category == ""){
+    fullQuery = "+*"+escapedQuery+"*";
+  } else {
+    fullQuery = "+*"+escapedQuery+"* +category:"+category;
+  }
+  return lunrIndex.search(fullQuery).map(function(result) {
     return songs.filter(function(song) {
       try {
         console.log(song)
@@ -66,6 +74,7 @@ function renderResults(results) {
 
 function initUI() {
   $results = $("#results");
+  $category = $("#category");
 
   $("#search").keyup(function(){
     $results.empty();
@@ -74,7 +83,7 @@ function initUI() {
       return;
     }
 
-    var results = search(query);
+    var results = search(query, category.value);
 
     renderResults(results);
   });
