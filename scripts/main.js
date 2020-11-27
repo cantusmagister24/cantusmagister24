@@ -68,6 +68,9 @@ function renderResults(results) {
       text: "» " + result.name
     }));
 
+    $result.append($("<br>",));
+    $result.append($("<br>",));
+
     $results.append($result);
   });
 }
