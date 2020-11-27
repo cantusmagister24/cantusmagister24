@@ -167,7 +167,7 @@ p {
 }
 .bottom-bar {
   background-color: #444444;
-  height: 150px;
+  height: 70px;
   width: 100%;
   bottom: 0;
   overflow: hidden;
@@ -185,8 +185,8 @@ p {
   color: #000000;
   list-style-type: none;
   float: left;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 20px;
 }
 .bottom-bar li a {
