@@ -206,3 +206,35 @@ p {
   /* padding: 5px 15px; */
   opacity: 1.0;
 }
+
+/* Random Song */
+.random-song {
+  margin-bottom: 100px;
+}
+
+.random-song button {
+  margin-left: 100px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f8f8f8;
+  background-color: #ff7500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px -8px rgba(0,0,0,.2);
+}
+
+.random-song button:hover {
+  background-color: #e06600;
+}
+
+.random-song img {
+  display: block;
+  margin-left: 100px;
+  max-width: calc(100% - 150px);
+  max-height: 80vh;
+  border-radius: 4px;
+  box-shadow: 0 20px 10px -14px rgba(0,0,0,.2);
+}

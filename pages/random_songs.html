@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>CantusMagister24: Zufällige Lieder</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -19,7 +20,13 @@
       </div>
     </div>
 
-    <h1>Kommt bald...</h1>
+    <div class="random-song">
+      <h1 id="random-title">Lied wird geladen...</h1>
+      <button id="random-button" type="button">Nächstes zufälliges Lied</button>
+      <a id="random-link" href="#">
+        <img id="random-image" alt=""/>
+      </a>
+    </div>
 
     <div class="bottom-bar">
       <div id="bottom-container">
@@ -33,5 +40,6 @@
       </div>
     </div>
 
+    <script src="../scripts/random.js"></script>
   </body>
 </html>
